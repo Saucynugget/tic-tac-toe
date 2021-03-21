@@ -3,15 +3,58 @@
 <head>
   <title>Tic-Tac-Toe</title>
   <meta name="description" content="The HTML5 Herald">
-
+  <title>Tic-tac-toe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header></header>
-    
+
+
     <main>
 
+
+      <div id = "start-menu">
+        <div id = "menu-content">
+        <div id = "player1-settings">
+          <p>Choose player1: </p>
+          <label for="player1">Player</label>
+          <input type="radio" name="player1" id = "p1real" value = "real">
+          <label for="AI1">/  AI</label>
+          <input type="radio" id="AI1" name = "player1" value = "ai"><br>
+          <label for="Player1-name">Name: </label>
+          <input type="text" id ="Player1-name" value="Player1">
+        </div>
+
+        <div id = "player2-settings">
+          <p>Choose player2: </p>
+          <label for="player2">Player</label>
+          <input type="radio" name ="player2" id = "p2real" value = "real"> 
+          <label for="AI2">/  AI</label>
+          <input type="radio" id="AI2" name = "player2" value = "ai"> <br>
+          <label for="Player2-name">Name: </label>
+          <input type="text" id ="Player2-name" value="Player2">
+        </div>
+
+        <div id = "startBtn">
+          <button>START GAME!</button>
+        </div>
+      </div>
+      </div>
+
+
+
+
+        <div id="modal1" class = "modal">
+          <div class = "modal-content">
+            <span id = "closeBtn">&times</span>
+            <p id = "modalMsg">lorem ipsum</p>
+            <button id = "play-again">Play again</button>
+          </div>
+
+
+
+        </div>
         <div id = "boardArea">
             <div id = "board">
                 <div class = "board-square" id = "square-1"></div>
@@ -23,7 +66,25 @@
                 <div class = "board-square" id = "square-7"></div>
                 <div class = "board-square" id = "square-8"></div>
                 <div class = "board-square" id = "square-9"></div>
-                
+            </div>
+
+            <div id = "prompt">
+              <p id = "promptText">Player1's turn</p>
+            </div>
+
+            <div id = "player-tag1">
+              <p id = "playerX">Player1</p>
+              <p>X</p>
+        
+            </div>
+            
+            <div id = "player-tag2">
+              <p id = "playerO">Player2</p>
+              <p>O</p>
+            </div>
+
+            <div id = "button-area">
+              <button id = "reset-button">Reset</button>
             </div>
         </div>
 
